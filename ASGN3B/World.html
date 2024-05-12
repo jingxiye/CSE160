@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Assignment 3A</title>
+</head>
+
+<body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+        Please use a browser that supports "canvas"
+    </canvas>
+
+    <p>
+    <p id="numdot"></p>
+    <p id="fpsDisplay">FPS: 0</p>
+    <p></p>
+
+    <label>Mid Cube</label>
+    <button id="on_animLong">ON</button>
+    <button id="off_animLong">OFF</button>
+    <input name="bottomBox" id="bottomBox" type="range" min="-45" max="45" step="1" value="0"/>
+
+    <p></p>
+
+    <label>Top Cube</label>
+    <button id="on_animSmall">ON</button>
+    <button id="off_animSmall">OFF</button>
+    <input name="topBox" id="topBox" type="range" min="-45" max="45" step="1" value="0"/>
+
+    <p></p>
+    
+    
+    <p></p>
+    
+    <label>Notes to grader</label>
+    <p>
+        Using some images from goole, codes from professor's videos. You can use mise to control. It is a maze game, try to find the big tree!
+    </p>
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-cse160.js"></script>
+    <script src="lib/triangle.js"></script>
+    <script src="lib/circle.js"></script>
+    <script src="lib/cube.js"></script>
+    <script src="lib/camera.js"></script>
+    <script src="World.js"></script>
+</body>
+</html>

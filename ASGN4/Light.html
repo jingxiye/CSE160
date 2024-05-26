@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Lightiing</title>
+    <style>
+    </style>
+</head>
+
+<body onload="main()" id="body">
+    <div class="row">
+        <div class="column">
+        </div>
+        <div class="column">
+            <canvas id="webgl" width="400" height="400">
+            </canvas>
+    </div>
+    </div>
+    </div>
+            <p id="numdot" style="display: inline"></p>
+            
+            <p></p>
+        <div class="column">
+            <label for="fov_slider">Viewing:</label>
+            <input id="fov_slider" type="range" min="30" max="90" step="1" value="90"/>
+
+            <p></p>
+
+            <label>Normals:</label>
+            <button id="normalOn">ON</button>
+            <button id="normalOff">OFF</button>
+
+            <label>Lighting:</label>
+            <button id="lightOn">ON</button>
+            <button id="lightOff">OFF</button>
+
+            <p></p>
+            
+            <label>Red:</label>
+            <input id="rlight_slider" type="range" min="0" max="255" step="1" value="255"/>
+            <label>Green:</label>
+            <input id="glight_slider" type="range" min="0" max="255" step="1" value="255"/>
+            <label>Blue:</label>
+            <input id="blight_slider" type="range" min="0" max="255" step="1" value="255"/>
+
+            <p></p>
+
+            <label>Light Animation:</label>
+            <button id="lightAnimOn">ON</button>
+            <button id="lightAnimOff">OFF</button>
+
+            <p></p>
+
+            <label>Light X:</label>
+            <input id="light_sliderx" type="range" min="-475" max="475" step="1" value="0"/>
+
+            <label>Light Y:</label>
+            <input id="light_slidery" type="range" min="0" max="475" step="1" value="1"/>
+
+            <label>Light Z:</label>
+            <input id="light_sliderz" type="range" min="-475" max="475" step="1" value="0"/>
+
+            <p></p>
+
+            <button id="resetLightPos" >Reset Light</button>
+
+            <p></p>
+
+            <button id="resetCameraPos" >Reset Camera</button> Notes to grader: WASD to move. Click button to switch mode. some codes in cube.js and camera from CHATGPT
+        </div>
+    </div>
+
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-cse160.js"></script>
+    <script src="src/triangle.js"></script>
+    <script src="src/circle.js"></script>
+    <script src="src/cube.js"></script>
+    <script src="src/sphere.js"></script>
+    <script src="src/camera.js"></script>
+    <script src="src/texture.js"></script>
+    <script src="src/sets.js"></script>
+    <script src="Light.js"></script>
+</body>
+</html>
